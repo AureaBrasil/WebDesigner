@@ -4,7 +4,7 @@
 
 O objetivo do projeto foi implementar a identidade visual de um cliente  em um ___template___ existente
 
-Tecnologias utilizadas
+#### Tecnologias utilizadas:
 
 * HTML5
 * CSS3
