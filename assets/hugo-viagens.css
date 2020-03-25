@@ -116,7 +116,9 @@ span.buscador-refazer::after {
 /* default */
 header#header .conteudo .logo img {
     width: 100%;
-    max-width: 220px;
+    max-width: 150px;
+    margin-left: 25px;
+    padding: 20px;
 }
 
 #home .search-box-content {
@@ -220,7 +222,7 @@ header#header .conteudo .logo img {
 }
 
 div#loginconfirmlinks {
-    display: flex !important;
+    display: block !important;
     display: -webkit-flex;
     display: -moz-flex;
     display: -o-flex;
@@ -637,11 +639,12 @@ div#loginconfirmlinks {
     margin: 0px;
     text-decoration: none;
     text-align: center;
-    color: #000;
+    color: #fff;
     position: relative;
     display: inline-block;
     text-transform: uppercase;
     font-family: "Lato", sans-serif;
+    font-weight: 800;
     border: none;
     border-radius: 100px;
     background-image: linear-gradient(to right, #FD8F52, #FE676E 90%);
@@ -662,11 +665,12 @@ div#loginconfirmlinks {
     padding: 8px 0px;
     text-decoration: none;
     text-align: center;
-    color: #000;
+    color: #fff;
     position: relative;
     display: inline-block;
     text-transform: uppercase;
     font-family: "Lato", sans-serif;
+    font-weight: 800;
     border: none;
     border-radius: 100px;
     background-image: linear-gradient(to right, #FD8F52, #FE676E 90%);
@@ -2788,6 +2792,7 @@ var {
     border: 0;
     outline: 0;
     vertical-align: top;
+    min-height: 0px;
 }
 
 .clearfix {
@@ -2895,7 +2900,6 @@ header#header .mainMenu {
 header#header .mainMenu .contMenu {
     width: auto;
     height: 47px;
-    display: flex;
     display: -webkit-flex;
     display: -moz-flex;
     display: -o-flex;
@@ -2912,7 +2916,9 @@ header#header .mainMenu .contMenu ul#menuElem,
 header#header .mainMenu .contMenu ul#menuElem,
 header#header .mainMenu .contMenu ul#menuElem li:hover>ul {
     list-style: none;
-    background-image: linear-gradient(to right, #FD8F52, #FE676E 80%);
+    background: transparent;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header#header .mainMenu .contMenu ul#menuElem li:hover>ul {
@@ -4645,7 +4651,7 @@ footer.footer .conteudo .bloco:last-of-type a {
 }
 
 footer.footer .footerBaixo {
-    background: #f3f7f6;
+    background: #fff;
     text-align: center;
     padding: 30px 10%;
     display: flex;
@@ -6480,8 +6486,8 @@ ul.boxExchange_lista li {
 
 /* #/1.0 - PAGINA: Resultados Voos / Melhores Precos # */
 #moreMatrix.the-matrix-nav {
-    bottom: -35px;
-    right: 50px;
+    bottom: -54px;
+    right: 10px;
 }
 
 .the-matrix-nav a.the-matrix-nav-back {
@@ -6542,10 +6548,16 @@ ul.boxExchange_lista li {
     font-family: "Lato", sans-serif;
 }
 
+#principalMatrix{
+    margin:auto;
+    background: #fff;
+    padding: 20px;
+}
+
 #voos .pg-resultado-voos .resultado-busca #Geral .main-content .the-content {
-    border: 1px solid #E2E3E6;
+    border: none;
     position: relative;
-    background: none repeat scroll 0 0 #FFFFFF;
+    background: none repeat scroll 0 0 transparent;
     color: #333;
 }
 
@@ -6587,11 +6599,10 @@ ul.boxExchange_lista li {
 
 #output .content-module .holder-resultado-voos-item {
     display: block;
-    padding: 0;
-    margin: 15px 0 0 0;
-    background-color: #fff;
-    border: 1px solid #e2e2e2;
     width: 100%;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
 }
 
 .regular-search-results .flight-details {
@@ -6604,7 +6615,8 @@ ul.boxExchange_lista li {
     vertical-align: top;
     padding-left: 0;
     padding-right: 0;
-    background-color: #f7f7f7;
+    background-color: #fff;
+    border-radius: 10px;
 }
 
 .resultado-voos-item-perna-cabecalho {
@@ -6616,7 +6628,8 @@ ul.boxExchange_lista li {
     justify-content: space-between;
     align-items: center;
     width: 100% !important;
-    background: #f0f0f0;
+    background: #FFBD71;
+    border-radius: 10px 0px 0px 0px;
 }
 
 #output .content-module .holder-resultado-voos-item .holder-resultado-voos-item-esquerda .resultado-voos-item-perna .resultado-voos-item-perna-cabecalho .resultado-voos-item-perna-cabecalho-titulo {
@@ -6624,20 +6637,22 @@ ul.boxExchange_lista li {
     background-image: linear-gradient(to right, #FD8F52, #FE676E 90%);
     padding-left: 10px;
     order: 1;
+    border-radius: 10px 0px 0px 0px;
 }
 
 .holder-resultado-voos-item .holder-resultado-voos-item-esquerda .resultado-voos-item-perna .resultado-voos-item-perna-cabecalho-ida .resultado-voos-item-perna-cabecalho-titulo h6 {
     
     height: 21px;
     padding-left: 50px;
-    font-weight: bold;
+    font-weight: 800;
     font-size: 15px;
     letter-spacing: -0.05em;
     line-height: 1.5;
     display: block;
     width: 100px;
-    color: #000;
+    color: #fff;
     text-transform: uppercase;
+    filter: brightness(0) invert(1);
 }
 
 .holder-resultado-voos-item .holder-resultado-voos-item-esquerda .resultado-voos-item-perna .resultado-voos-item-perna-cabecalho-volta .resultado-voos-item-perna-cabecalho-titulo h6 {
@@ -6902,6 +6917,13 @@ span.resultado-voos-item-o-preco-especificacao {
     border-bottom: medium none;
     margin: 0 0px 0px !important;
     padding-bottom: 0;
+}
+
+.regular-search-results .flight-details {
+    margin: 0 10px 15px !important;
+    background: #fff;
+    padding: 0px;
+    border-radius: 10px;
 }
 
 .holder-resultado-voos-item-esquerda {
@@ -13148,7 +13170,11 @@ span[data-bind*="paymentResource.acceptTerms.replace"] label:nth-child(2){
 }
 
 .content-logo-login #p_lt_ctl00_EditableImage_ucEditableImage_imgImage {
-    width: 15% !important;
+    width: 100px !important;
+    left: 50%;
+    position: absolute;
+    margin-left: -50px;
+    margin-top: 60px;
 }
 
 #form .login-form .css-confirm-email {
@@ -13171,11 +13197,10 @@ span[data-bind*="paymentResource.acceptTerms.replace"] label:nth-child(2){
     display: block;
     width: 30%;
     padding: 20px;
-    padding-top: 10px;
+    padding-top: 100px;
     margin: 0 auto;
     background: #FFFFFF;
-    border-radius: 0px;
-    border-radius: 0px;
+    border-radius: 10px;
     box-shadow: 0px 0px 0px #444444;
 }
 
@@ -13297,10 +13322,13 @@ span[data-bind*="paymentResource.acceptTerms.replace"] label:nth-child(2){
 .box-login #loginconfirmlinks a,
 #login .box-login #loginconfirmlinks a {
     font-family: "Lato", sans-serif;
+    text-align: center;
     color: #FE676E;
     font-weight: 700;
     margin: auto;
     padding-top: 12px;
+    display: block;
+    width: 100%;
     transition: 0.2s;
     -webkit-transition: 0.2s;
     -moz-transition-duration: 0.2s;
@@ -25438,7 +25466,7 @@ div[aria-labelledby*="ui-dialog-title-modalRooms"] #modalRooms table tr td a.btn
     text-decoration: none;
     font-weight: 500;
     min-height: 35px;
-    color: #fff;
+    color: #000;
     position: relative;
     display: inline-block;
     text-transform: uppercase;
@@ -26170,11 +26198,12 @@ div[aria-labelledby*="ui-dialog-title-modalRooms"] #modalRooms table tr td a.btn
     padding: 7px 30px !important;
     text-decoration: none !important;
     min-height: 32px !important;
-    color: #000000 !important;
+    color: #fff !important;
     position: relative !important;
     display: inline-block;
     text-transform: uppercase !important;
     font-family: "Lato", sans-serif !important;
+    font-weight: 800 !important;
     border: none !important;
     background-color: #FE676E !important;
 }
